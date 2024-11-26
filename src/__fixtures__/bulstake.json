@@ -1,0 +1,522 @@
+{
+  "station": {
+    "id": 7075,
+    "qualifier": "u",
+    "direction": "upstream",
+    "isDownstream": false,
+    "isUpstream": true,
+    "name": "New Botley",
+    "river": "Bulstake Stream",
+    "type": "s",
+    "plotNegativeValues": false,
+    "status": "active",
+    "statusDate": null,
+    "statusReason": "",
+    "region": "Thames",
+    "catchment": "Vale of White Horse",
+    "percentile5": "2.01",
+    "percentile95": "0.87",
+    "stageDatum": "54.00",
+    "porMinValue": "0.74",
+    "porMinDate": "2002-10-15T03:45:00.000Z",
+    "porMaxValue": "3.14",
+    "porMaxDate": "2007-07-25T10:30:00.000Z",
+    "coordinates": "{\"type\":\"Point\",\"coordinates\":[-1.28113334,51.752653793]}",
+    "isMulti": false,
+    "isSingle": true,
+    "isRiver": true,
+    "isCoastal": false,
+    "isGroundwater": false,
+    "isClosed": false,
+    "isActive": true,
+    "isSuspended": false,
+    "isUkCmf": false,
+    "post_process": false,
+    "subtract": null,
+    "riverNavigation": {
+      "river_id": "bulstake-stream",
+      "river_name": "Bulstake Stream",
+      "river_qualified_name": "Bulstake Stream",
+      "navigable": true,
+      "view_rank": 1,
+      "rank": "1",
+      "rloi_id": 7075,
+      "up": null,
+      "down": null,
+      "telemetry_id": "1645TH",
+      "region": "Thames",
+      "catchment": "Vale of White Horse",
+      "wiski_river_name": "Bulstake Stream",
+      "agency_name": "New Botley",
+      "external_name": "New Botley",
+      "station_type": "S",
+      "status": "Active",
+      "qualifier": "u",
+      "iswales": false,
+      "value": "2.685",
+      "value_timestamp": "2024-11-26T12:30:00.000Z",
+      "value_erred": false,
+      "trend": "rising",
+      "percentile_5": "2.01",
+      "percentile_95": "0.87",
+      "centroid": "0101000020E61000007C0859AC857FF4BF1AAFA1F556E04940",
+      "lon": -1.281133340104616,
+      "lat": 51.752653793284665,
+      "day_total": null,
+      "six_hr_total": null,
+      "one_hr_total": null,
+      "id": "1252"
+    },
+    "trend": "rising",
+    "hasPercentiles": true,
+    "hasImpacts": false,
+    "formattedPorMaxDate": "25/07/07",
+    "thresholdPorMaxDate": "25 July 2007",
+    "formattedStatusDate": "Invalid date",
+    "formattedStatusTime": "Invalid date",
+    "recentValue": {
+      "ts": "2024-11-26T12:30Z",
+      "_": 2.685,
+      "err": false,
+      "formattedTime": "12:30pm",
+      "latestDayFormatted": "26 November",
+      "dateWhen": "today"
+    },
+    "stateInformation": "0.87m to 2.01m",
+    "state": "High"
+  },
+  "id": 7075,
+  "river": {
+    "river_id": "bulstake-stream",
+    "river_name": "Bulstake Stream",
+    "river_qualified_name": "Bulstake Stream",
+    "navigable": true,
+    "view_rank": 1,
+    "rank": "1",
+    "rloi_id": 7075,
+    "up": null,
+    "down": null,
+    "telemetry_id": "1645TH",
+    "region": "Thames",
+    "catchment": "Vale of White Horse",
+    "wiski_river_name": "Bulstake Stream",
+    "agency_name": "New Botley",
+    "external_name": "New Botley",
+    "station_type": "S",
+    "status": "Active",
+    "qualifier": "u",
+    "iswales": false,
+    "value": "2.685",
+    "value_timestamp": "2024-11-26T12:30:00.000Z",
+    "value_erred": false,
+    "trend": "rising",
+    "percentile_5": "2.01",
+    "percentile_95": "0.87",
+    "centroid": "0101000020E61000007C0859AC857FF4BF1AAFA1F556E04940",
+    "lon": -1.281133340104616,
+    "lat": 51.752653793284665,
+    "day_total": null,
+    "six_hr_total": null,
+    "one_hr_total": null,
+    "id": "1252"
+  },
+  "feedback": false,
+  "bingMaps": "Ak3YHoVXqd66lIuzEdjBrd1T84Jsb8ppa0SygbuSxC1qDpXVVoYcKo2s39qoBkji",
+  "displayGetWarningsLink": true,
+  "displayLongTermLink": true,
+  "floodRiskUrl": "https://www.gov.uk/check-long-term-flood-risk",
+  "trend": "rising",
+  "banner": 8,
+  "severityLevel": "warning",
+  "alertsBanner": "There are flood alerts within 5 miles of this measuring station",
+  "alertsLink": "/alerts-and-warnings?station=7075#alerts",
+  "isAlertLinkRendered": false,
+  "warningsBanner": "There are flood warnings within 5 miles of this measuring station",
+  "warningsLink": "/alerts-and-warnings?station=7075#warnings",
+  "isWarningLinkRendered": true,
+  "mainIcon": "<svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill-rule=\"evenodd\" stroke-linejoin=\"round\" stroke-miterlimit=\"2\"><path d=\"M20.133 1.117c1.292.067 2.5.798 3.159 1.926l16.316 30.251c.14.282.146.318.198.468.097.286.158.584.183.885.166 2.062-1.497 4.103-3.681 4.175H3.672c-.314-.011-.349-.022-.506-.048-.28-.047-.553-.127-.814-.237-1.925-.814-2.951-3.285-1.98-5.243L16.688 3.043c.244-.419.364-.556.598-.796.748-.767 1.637-1.172 2.847-1.13z\" fill=\"#fff\"/><path d=\"M20.026 2.811c.731.019 1.426.433 1.79 1.068l16.283 30.189c.639 1.26-.277 3.02-1.826 3.058H3.707c-1.416-.034-2.521-1.688-1.826-3.058L18.164 3.879a2.07 2.07 0 0 1 1.862-1.068z\" fill=\"#e3000f\"/><path d=\"M19.643 5.681c.069-.128.202-.207.347-.207s.278.079.347.207L35.821 34.41c.065.122.062.27-.009.389s-.199.192-.338.192H4.506c-.139 0-.267-.073-.338-.192s-.075-.267-.009-.389L19.643 5.681z\" fill=\"#fff\"/><path d=\"M17.096 16.51v1.272l2.25-2.586c.131-.153.324-.24.524-.239s.393.088.524.24l6.509 7.525.001.001c.251.289.219.728-.071.978s-.728.219-.979-.071l-.595-.687v3.671c-.203.017-.304.07-.483.181-.199.124-.462.368-.892.566-.286.129-.64.216-1.039.215h-.028a2.48 2.48 0 0 1-1.372-.424c-.325-.217-.52-.385-.693-.459-.116-.051-.225-.084-.42-.085-.276.007-.378.06-.585.187-.2.124-.462.368-.891.565a2.5 2.5 0 0 1-1.039.216c-.581.004-1.059-.203-1.388-.413l-.709-.469a.6.6 0 0 0-.287-.072c-.218-.01-.591.143-1.018.378v-4.018l-.596.685a.69.69 0 0 1-.524.238c-.162 0-.324-.055-.455-.17-.289-.251-.32-.69-.068-.979l2.701-3.106v-3.14h1.623z\" fill=\"#181c1b\"/><path d=\"M7.503 30.719l.17.154a10.59 10.59 0 0 0 1.204.919c.228.146.462.279.705.383a2.04 2.04 0 0 0 .809.19c.798-.02 1.381-.403 1.941-.687.553-.302 1.057-.522 1.398-.512.172.002.289.036.441.109.226.107.505.343.909.598a3.04 3.04 0 0 0 1.659.492c.479.002.898-.102 1.238-.255.511-.234.835-.53 1.101-.698.273-.17.448-.256.834-.263.27.002.438.049.605.123.247.107.501.327.896.588a2.95 2.95 0 0 0 1.672.505c.48.002.899-.102 1.239-.255.512-.234.835-.53 1.102-.698.273-.17.448-.256.833-.263.261-.004.57.107.805.237.117.063.214.128.279.174l.07.053.014.011.049.039c.397.294 1.03.702 1.921.702h.037c.807-.015 1.495-.389 2.089-.76a7.96 7.96 0 0 0 .771-.563l.202-.173 1.586 2.937H5.831l1.672-3.087zm1.711-3.158c.028.049.061.096.1.14a5.78 5.78 0 0 0 .843.785c.393.285.881.596 1.559.609.793-.023 1.332-.391 1.84-.647.502-.277.941-.46 1.196-.448.13.002.208.024.33.083.181.083.433.295.813.538s.926.479 1.594.474c.458.002.865-.099 1.192-.248.492-.226.793-.506 1.023-.648.236-.146.354-.207.671-.215a1.1 1.1 0 0 1 .483.098c.198.084.421.277.794.526a2.85 2.85 0 0 0 1.575.487h.033a2.84 2.84 0 0 0 1.192-.248c.493-.226.795-.505 1.025-.648.236-.147.353-.207.67-.215.197-.004.455.085.655.196.099.055.182.11.236.149l.058.044.062.05a3.94 3.94 0 0 0 .746.444 2.78 2.78 0 0 0 1.129.228c.724.002 1.302-.315 1.681-.633.12-.1.227-.203.32-.3l.724 1.34a.79.79 0 0 0-.089.085h0a3.53 3.53 0 0 1-.328.298c-.258.214-.626.479-.99.674s-.732.314-.917.307c-.493-.011-.679-.14-1.066-.408a3.92 3.92 0 0 0-.589-.39c-.37-.198-.887-.415-1.52-.418-.467-.002-.878.104-1.209.259-.499.236-.811.525-1.079.69a1.48 1.48 0 0 1-.886.267 1.37 1.37 0 0 1-.603-.123c-.249-.107-.502-.327-.897-.589a2.95 2.95 0 0 0-1.673-.504 2.83 2.83 0 0 0-1.21.259c-.499.236-.811.526-1.079.691a1.49 1.49 0 0 1-.884.266c-.49-.007-.735-.168-1.158-.462-.207-.144-.44-.32-.744-.471s-.682-.268-1.107-.266c-.855.01-1.53.39-2.103.688-.565.315-1.054.531-1.236.511 0 0-.003 0-.021-.003-.069-.009-.258-.081-.466-.201-.316-.178-.688-.452-.993-.704l-.611-.555c-.017-.02-.035-.038-.054-.056l.968-1.786z\" fill=\"#00a4cd\"/><path d=\"M22.139 23.029h2.077v2.285h-2.077z\" fill=\"#fff\"/></svg>",
+  "telemetry": [
+    {
+      "ts": "2024-11-26T12:30Z",
+      "_": 2.685,
+      "err": false,
+      "formattedTime": "12:30pm",
+      "latestDayFormatted": "26 November",
+      "dateWhen": "today"
+    },
+    {
+      "ts": "2024-11-26T12:15Z",
+      "_": 2.681,
+      "err": false
+    },
+    {
+      "ts": "2024-11-21T13:45Z",
+      "_": 1.474,
+      "err": false
+    },
+    {
+      "ts": "2024-11-21T13:30Z",
+      "_": 1.477,
+      "err": false
+    },
+    {
+      "ts": "2024-11-21T13:15Z",
+      "_": 1.478,
+      "err": false
+    },
+    {
+      "ts": "2024-11-21T13:00Z",
+      "_": 1.479,
+      "err": false
+    }
+  ],
+  "catchments": [],
+  "date": "2024-11-26T12:53:41.828Z",
+  "status": "active",
+  "outOfDate": false,
+  "porMaxValueIsProvisional": false,
+  "warningsAlerts": {
+    "1": [
+      {
+        "ta_id": 2383,
+        "ta_code": "061WAF14LChrwell",
+        "ta_name": "River Cherwell from Lower Heyford down to and including Oxford",
+        "ta_description": "River Cherwell and its tributaries from Lower Heyford down to Oxford including Rousham, Enslow, Thrupp, Hampton Poyle and East Kidlington",
+        "situation": " Property flooding is expected. Flood warnings are in force for the Lower Cherwell between Lower Heyford and Oxford. River levels are high but dropping slowly on the lower River Cherwell following heavy rainfall from Storm Bert. Therefore, flooding of property, roads and low lying land is expected to continue today, 26/11/24. \nThe forecast is for a dry day with further rain forecast tonight into tomorrow. River levels are expected to continue falling slowly through today but may rise again in response to rainfall overnight. Avoid using low lying footpaths near local watercourses. Go to the 'River and Sea levels in England' webpage for current river levels. This message will be updated tomorrow morning, 27/11/24, or earlier as the situation changes. ",
+        "quick_dial": 171445,
+        "situation_changed": "2024-11-26T12:23:00.000Z",
+        "severity_changed": "2024-11-24T18:09:00.000Z",
+        "message_received": "2024-11-26T12:23:49.333Z",
+        "severity_value": 1,
+        "severity": "Flood alert",
+        "geometry": "{\"type\":\"Point\",\"coordinates\":[-1.265128073,51.825615868]}"
+      },
+      {
+        "ta_id": 2363,
+        "ta_code": "061WAF12Evenlode",
+        "ta_name": "River Evenlode from Moreton in Marsh to Cassington and also the River Glyme at Wootton and Woodstock",
+        "ta_description": "River Evenlode from Moreton in Marsh to Cassington including, Kingham, Bledington, Milton under Wychwood, Shipton under Wychwood, Ascott under Wychwood, Charlbury, Fawler and Long Hanborough and also the River Glyme at Wootton and Woodstock",
+        "situation": " Property flooding is not currently expected. River levels are high but falling slowly on the River Evenlode following heavy rainfall from Storm Bert. Therefore, flooding of low lying land, roads, and property is expected to continue today, 26/11/24, especially in the Evenlode Bridge, Shipton under Wychwood, Ascott under Wychwood, and Woodstock areas. The forecast for today is mainly dry with further rain tonight into tomorrow. River levels are expected to continue to fall very slowly through today, but may rise again in response to tonight's rainfall. Our staff have been checking and clearing trash screens and we are monitoring the situation. Go to the 'River and Sea levels in England' webpage for current river levels. Avoid using low lying footpaths near local watercourses. This message will be updated tomorrow, 27/11/24, or as the situation changes. ",
+        "quick_dial": 171085,
+        "situation_changed": "2024-11-26T11:37:00.000Z",
+        "severity_changed": "2024-11-23T18:53:00.000Z",
+        "message_received": "2024-11-26T11:37:12.356Z",
+        "severity_value": 1,
+        "severity": "Flood alert",
+        "geometry": "{\"type\":\"Point\",\"coordinates\":[-1.519497596,51.879946704]}"
+      },
+      {
+        "ta_id": 2389,
+        "ta_code": "061WAF17Ock",
+        "ta_name": "River Ock from Watchfield to Abingdon, and also the Letcombe Brook at Wantage, Grove and East Hanney",
+        "ta_description": "River Ock from Watchfield to Abingdon including, Stanford in the Vale, Charney Bassett, Lyford and Garford, and also the Letcombe Brook at Wantage, Grove and East Hanney",
+        "situation": " Property flooding is expected. The flood warning for the properties closest to the River Ock from Tesco to St. Helen's Wharf and the flood warning for the River Ock at Abingdon are currently in force. River levels high but falling on the River Ock following heavy rainfall from Storm Bert. Therefore, flooding of low lying land and roads is expected to continue today, 26/11/2024, and overnight into tomorrow, especially in Abingdon area. The forecast for today is dry with further rain tonight into tomorrow. River levels are expected to drop slowly through today but may respond again to forecast rainfall. Avoid using low lying footpaths near local watercourses. Do not drive through flood water. Go to the 'River and Sea levels in England' webpage for current river levels. This message will be updated tomorrow, 27/11/2024, or as the situation changes.",
+        "quick_dial": 171041,
+        "situation_changed": "2024-11-26T11:36:00.000Z",
+        "severity_changed": "2024-11-24T20:25:00.000Z",
+        "message_received": "2024-11-26T11:37:05.597Z",
+        "severity_value": 1,
+        "severity": "Flood alert",
+        "geometry": "{\"type\":\"Point\",\"coordinates\":[-1.415574387,51.642208586]}"
+      },
+      {
+        "ta_id": 2369,
+        "ta_code": "061WAF14RayOxon",
+        "ta_name": "River Ray and its tributaries from Shipton Lee to and including Islip",
+        "ta_description": "River Ray and its tributaries from Shipton Lee to Islip, including Ludgershall, Blackthorn and Murcott",
+        "situation": " Property flooding is possible. The flood warning for the River Ray from the Heath Bridge area to and including the Otmoor Basin and the flood warning for the River Ray for Islip are currently in force. River levels are high but now stable on the River Ray following heavy rainfall from Storm Bert. Therefore, flooding of low lying land and roads is expected to continue today, 26/11/24. The forecast for today is dry with further rainfall tonight into tomorrow. River levels are expected to remain stable through today, and may rise further upstream of Lower Arncott in response to tonight's forecast rainfall.  \nAvoid using low lying footpaths near local watercourses. Do not drive through flood water. Go to the 'River and Sea levels in England' webpage for current river levels. \nThis message will be updated by tomorrow morning, 27/11/24, or earlier as the situation changes. ",
+        "quick_dial": 171451,
+        "situation_changed": "2024-11-26T11:51:00.000Z",
+        "severity_changed": "2024-11-24T14:50:00.000Z",
+        "message_received": "2024-11-26T11:51:28.912Z",
+        "severity_value": 1,
+        "severity": "Flood alert",
+        "geometry": "{\"type\":\"Point\",\"coordinates\":[-1.118022734,51.853693025]}"
+      },
+      {
+        "ta_id": 2380,
+        "ta_code": "061WAF23BsctKngs",
+        "ta_name": "River Thames and tributaries from Buscot Wick down to Kings Lock",
+        "ta_description": "River Thames and tributaries from Buscot Wick down to Kings Lock, above Oxford, including Buscot, Kelmscott, Radcot, Chimney, Northmoor, Stanton Harcourt, Bablock Hythe and caravan park, Eynsham, Swinford and Yarnton",
+        "situation": " Property flooding is expected. A flood warning is in force for the River Thames from Buscot Wick down to Shifford. River levels are rising slowly on the River Thames following heavy rainfall from Storm Bert. Therefore, flooding of property, low lying land and roads is expected to continue today, 26/11/2024, and overnight into tomorrow. The forecast is for a dry day today with further rain tonight into tomorrow. River levels are expected to continue rising gradually through today and overnight, particularly downstream of Radcot. Levels will remain high over the coming days. We are monitoring the situation. Avoid using low lying footpaths near local watercourses. Do not drive through flood water. Go to the 'River and Sea levels in England' webpage for current river levels. This message will be updated tomorrow, 27/11/2024, or as the situation changes.",
+        "quick_dial": 171164,
+        "situation_changed": "2024-11-26T12:38:00.000Z",
+        "severity_changed": "2024-11-24T20:15:00.000Z",
+        "message_received": "2024-11-26T12:38:59.261Z",
+        "severity_value": 1,
+        "severity": "Flood alert",
+        "geometry": "{\"type\":\"Point\",\"coordinates\":[-1.481412424,51.72275398]}"
+      },
+      {
+        "ta_id": 2335,
+        "ta_code": "061WAF23Oxford",
+        "ta_name": "River Thames and tributaries in the Oxford area",
+        "ta_description": "River Thames and tributaries in the Oxford area, including areas between Wolvercote down to and including Radley and Jericho",
+        "situation": "Property flooding is not currently expected. River levels are rising on the River Thames as a result of heavy rainfall from Storm Bert. Therefore, flooding of low lying land and roads is expected to continue today, 25/11/2024 and overnight into tomorrow, 26/11/2024, especially in the Botley Road area. It is forecast to be a mostly dry day. We expect river levels to continue rising over the next few days as water moves downstream. Avoid using low lying footpaths near local watercourses. Do not drive through flood water. Go to the 'River and Sea levels in England' webpage for current river levels. This message will be updated tomorrow, 26/11/2024, or as the situation changes.",
+        "quick_dial": 171176,
+        "situation_changed": "2024-11-25T14:54:00.000Z",
+        "severity_changed": "2024-11-24T20:25:00.000Z",
+        "message_received": "2024-11-25T14:54:23.010Z",
+        "severity_value": 1,
+        "severity": "Flood alert",
+        "geometry": "{\"type\":\"Point\",\"coordinates\":[-1.262707519,51.741050908]}"
+      },
+      {
+        "ta_id": 2381,
+        "ta_code": "061WAF23Abingdon",
+        "ta_name": "River Thames for the Abingdon area",
+        "ta_description": "River Thames for the Abingdon, including areas between Abingdon down to and including Little Wittenham",
+        "situation": "Property flooding is not currently expected. River levels are rising slowly on the River Thames following heavy rainfall from Storm Bert. Therefore, flooding of low lying land and roads is expected to continue today, 26/11/2024 and overnight into tomorrow, especially in the Abingdon area. Today is forecast to be dry with further rain tonight into tomorrow. We expect river levels to continue rising over the next 24 hours as water moves downstream. We are monitoring the situation. Avoid using low lying footpaths near local watercourses. Do not drive through flood water. Go to the 'River and Sea levels in England' webpage for current river levels. This message will be updated tomorrow, 27/11/2024, or as the situation changes.",
+        "quick_dial": 171184,
+        "situation_changed": "2024-11-26T12:38:00.000Z",
+        "severity_changed": "2024-11-24T20:26:00.000Z",
+        "message_received": "2024-11-26T12:38:53.587Z",
+        "severity_value": 1,
+        "severity": "Flood alert",
+        "geometry": "{\"type\":\"Point\",\"coordinates\":[-1.234770574,51.652003443]}"
+      },
+      {
+        "ta_id": 2364,
+        "ta_code": "061WAF10Windrush",
+        "ta_name": "River Windrush from Bourton to Newbridge",
+        "ta_description": "River Windrush from Bourton to Newbridge including Burford, Asthall, Minster Lovell, Crawley, Witney, Ducklington, Rack End and Standlake",
+        "situation": " Property flooding is not currently expected. River levels are high but stable on the River Windrush following heavy rainfall from Storm Bert. Therefore, flooding of roads and low lying land is expected to continue today, 26/11/24. The forecast for today is dry with further rain tonight into tomorrow. We expect river levels to remain high over the coming days.\nAvoid using low lying footpaths near local watercourses. Go to the 'River and Sea levels in England' webpage for current river levels. This message will be updated by tomorrow morning, 27/11/24, or earlier as the situation changes. ",
+        "quick_dial": 171075,
+        "situation_changed": "2024-11-26T11:37:00.000Z",
+        "severity_changed": "2024-11-24T18:30:00.000Z",
+        "message_received": "2024-11-26T11:37:14.931Z",
+        "severity_value": 1,
+        "severity": "Flood alert",
+        "geometry": "{\"type\":\"Point\",\"coordinates\":[-1.523221864,51.775722995]}"
+      }
+    ],
+    "2": [
+      {
+        "ta_id": 2397,
+        "ta_code": "061FWF14KIDFAS",
+        "ta_name": "Area of Kidlington benefiting from the Flood Alleviation scheme",
+        "ta_description": "Area of Kidlington benefiting from the Flood Alleviation Scheme, including parts of Mill Street, Watermead, Cherwell Avenue, Queens Avenue, Edinburgh Drive, Springfield Road, Waverley Avenue, Lovelace Drive and Kings Way Drive in Kidlington",
+        "situation": "Property flooding is possible. River levels are high but dropping slowly on the River Cherwell following heavy rainfall from Storm Bert. Therefore, flooding of property and roads remains possible today 26/11/24. Properties most at risk are those closest to the river including properties on Mill End, Woodlands, Cherwell Avenue and Queens Avenue.\nThe forecast is for a predominantly dry day with further rainfall forecast tonight (26/11/2024) into tomorrow. River levels are expected to continue falling slowly over through today. Levels are sensitive to rainfall and may respond again later this week in response to forecast rainfall. We are monitoring the situation. Our staff are liaising with councils and emergency services. Move possessions and valuables off the ground or to safety. Activate any property flood protection products such as flood barriers and air brick covers. This message will be updated this evening, 26/11/24, or earlier as the situation changes. ",
+        "quick_dial": 171269,
+        "situation_changed": "2024-11-26T10:12:00.000Z",
+        "severity_changed": "2024-11-25T11:37:00.000Z",
+        "message_received": "2024-11-26T10:12:54.767Z",
+        "severity_value": 2,
+        "severity": "Flood warning",
+        "geometry": "{\"type\":\"Point\",\"coordinates\":[-1.274344835,51.820394976]}"
+      },
+      {
+        "ta_id": 2438,
+        "ta_code": "061FWF14CherOxfd",
+        "ta_name": "River Cherwell for the Oxford area",
+        "ta_description": "River Cherwell at Oxford from Cherwell Bridge to the Thames confluence north of New Hinksey, including parts of Summertown, New Marston and Magdalen Bridge areas",
+        "situation": "Property flooding is expected. River levels are rising steadily on the River Cherwell following heavy rainfall from Storm Bert and water moving downstream. Therefore, flooding of property and roads is possible from first thing this morning, 26/11/24. Levels are expected to be higher than those seen in January 2024. Areas most at risk are properties located closest to the River Cherwell on Water Eaton Road.\nThe forecast is for a predominantly dry day with further rainfall forecast overnight (26/11/2024) into tomorrow. River levels are expected to continue to rise throughout today and overnight. Our staff are liaising with councils and emergency services. Move possessions and valuables off the ground or to safety. Activate any property flood protection products such as flood barriers. Do not drive through flood water. This message will be updated this evening, 26/11/24, or earlier as the situation changes. ",
+        "quick_dial": 171444,
+        "situation_changed": "2024-11-26T07:26:00.000Z",
+        "severity_changed": "2024-11-26T07:26:00.000Z",
+        "message_received": "2024-11-26T07:26:24.691Z",
+        "severity_value": 2,
+        "severity": "Flood warning",
+        "geometry": "{\"type\":\"Point\",\"coordinates\":[-1.248692608,51.766955756]}"
+      },
+      {
+        "ta_id": 2400,
+        "ta_code": "061FWF14LHeyford",
+        "ta_name": "River Cherwell from Lower Heyford down to Cherwell Bridge",
+        "ta_description": "River Cherwell from Lower Heyford down to Cherwell Bridge including Rousham, Enslow, Thrupp and Hampton Poyle",
+        "situation": "Property flooding is expected. River levels are high but dropping slowly on the River Cherwell following heavy rainfall from Storm Bert. Therefore, flooding of property and roads is expected to continue today, 26/11/2024, especially in the Enslow and Lower Heyford areas.  Areas most at risk include Watermead Road, Kidlington.  The forecast is predominantly dry today with further rainfall forecast tonight (26/11/2024) into tomorrow. River levels are expected to continue to drop slowly through today. Levels remain sensitive to further rainfall and may rise again later in the week in response to forecast rain. \nWe are closely monitoring the situation. Move possessions and valuables off the ground or to safety. Activate any property flood protection products such as flood barriers. Go to the 'River and Sea levels in England' webpage for current river levels. This message will be updated this evening, 26/11/2024, or as the situation changes.",
+        "quick_dial": 171443,
+        "situation_changed": "2024-11-26T10:12:00.000Z",
+        "severity_changed": "2024-11-25T05:29:00.000Z",
+        "message_received": "2024-11-26T10:13:01.706Z",
+        "severity_value": 2,
+        "severity": "Flood warning",
+        "geometry": "{\"type\":\"Point\",\"coordinates\":[-1.270972304,51.838611271]}"
+      },
+      {
+        "ta_id": 2396,
+        "ta_code": "061FWF14Islip",
+        "ta_name": "River Ray for Islip",
+        "ta_description": "River Ray for Islip",
+        "situation": " Property flooding is expected. River levels are high but now stabilising on the River Ray between Lower Arncott and Islip following heavy rainfall from Storm Bert and water moving downstream. Therefore, flooding of property and roads is expected to continue between Lower Arncott and Islip today, 26/11/2024. Areas most at risk are properties located closest to the river on Mill Street​.\nThe forecast is predominantly dry day with further rainfall forecast tonight (26/11/2024) into tomorrow. River levels between Lower Arncott and Islip are expected to continue to remain high through today but will start to drop slowly. Levels remain sensitive to further rainfall and may rise again later this week in response to the forecast rainfall.  \nMove possessions and valuables off the ground or to safety. Activate any property flood protection products such as flood barriers. Do not drive through flood water. This message will be updated this evening, 26/11/2024, or as the situation changes.",
+        "quick_dial": 171449,
+        "situation_changed": "2024-11-26T10:07:00.000Z",
+        "severity_changed": "2024-11-25T18:10:00.000Z",
+        "message_received": "2024-11-26T10:07:33.003Z",
+        "severity_value": 2,
+        "severity": "Flood warning",
+        "geometry": "{\"type\":\"Point\",\"coordinates\":[-1.230318422,51.821170937]}"
+      },
+      {
+        "ta_id": 2477,
+        "ta_code": "061FWF23NwBotley",
+        "ta_name": "River Thames and tributaries at New Botley, New Hinksey, North Hinksey, South Hinksey and Grandpont",
+        "ta_description": "River Thames and tributaries at New Botley, New Hinksey, North Hinksey, South Hinksey and Grandpont in Oxford",
+        "situation": "Property flooding is expected. River levels are rising steadily on the River Thames following heavy rainfall from Storm Bert. Therefore, flooding of property and roads is expected from about 04.00 tomorrow, 26/11/24. Levels are expected to be higher than January 2024. Areas most at risk are Monmouth Road, Peel Place, Earl Street, Western Road, Duke Street, Buckingham Street, Folly Bridge, Wytham Street, West Way, Bulstake Close and Abingdon Road​. \nThe forecast is for a predominantly dry night with further rainfall forecast from tomorrow night (26/11/2024) into Wednesday. River levels are expected to continue to rise steadily overnight and through the day tomorrow. We are monitoring the situation. The temporary defences at Hinksey Lakes are planned to be deployed from tomorrow morning. Our staff are liaising with councils and emergency services. Move possessions and valuables off the ground or to safety. Activate any property flood protection products such as flood barriers. This message will be updated tomorrow morning, 26/11/24, or earlier as the situation changes. ",
+        "quick_dial": 171172,
+        "situation_changed": "2024-11-25T19:51:00.000Z",
+        "severity_changed": "2024-11-25T19:51:00.000Z",
+        "message_received": "2024-11-25T19:52:28.081Z",
+        "severity_value": 2,
+        "severity": "Flood warning",
+        "geometry": "{\"type\":\"Point\",\"coordinates\":[-1.260737141,51.74043489]}"
+      }
+    ],
+    "4": [
+      {
+        "ta_id": 2442,
+        "ta_code": "061FWF12Cassngtn",
+        "ta_name": "River Evenlode at Eynsham Mill down to and including Cassington Mill near Cassington",
+        "ta_description": "River Evenlode at Eynsham Mill down to and including Cassington Mill near Cassington",
+        "situation": "This flood warning has been removed. River levels have now fallen below the flood risk threshold. The flood warning for the area has now been removed. However, a flood alert remains in force for the wider area, so flooding may still affect roads and low lying land. Today (26/11/2024) is forecast to be mainly dry with further rain forecast overnight into tomorrow. We expected levels to continue to fall through today, but levels remain sensitive to further rainfall and may rise again in response to the forecast rainfall. We are monitoring the situation and will re-issue this Flood Warning if required. Avoid contact with flood water. Go to the 'River and Sea levels in England' webpage for current river levels. ",
+        "quick_dial": 171083,
+        "situation_changed": "2024-11-26T09:36:00.000Z",
+        "severity_changed": "2024-11-26T09:36:00.000Z",
+        "message_received": "2024-11-26T09:36:24.043Z",
+        "severity_value": 4,
+        "severity": "Warning no longer in force",
+        "geometry": "{\"type\":\"Point\",\"coordinates\":[-1.35755174,51.78745867]}"
+      }
+    ]
+  },
+  "readings": 482,
+  "recentValue": {
+    "ts": "2024-11-26T12:30Z",
+    "_": 2.685,
+    "err": false,
+    "formattedTime": "12:30pm",
+    "latestDayFormatted": "26 November",
+    "dateWhen": "today"
+  },
+  "recentValueBelowZero": false,
+  "hasNegativeValues": false,
+  "dataOverHourOld": false,
+  "centre": "-1.28113334,51.752653793",
+  "pageTitle": "Bulstake Stream level at New Botley",
+  "postTitle": "Latest river level information for the Bulstake Stream at New Botley ",
+  "metaDescription": "Check the latest recorded river level and recent 5-day trend at New Botley",
+  "imtdThresholds": {
+    "alert": "2.01",
+    "warning": {
+      "station_threshold_id": "558953",
+      "station_id": "7075",
+      "fwis_code": "061FWF23NwBotley",
+      "fwis_type": "W",
+      "direction": "u",
+      "value": "2.763",
+      "threshold_type": "FW RES FW",
+      "rloi_id": 7075,
+      "river_name": "Bulstake Stream",
+      "agency_name": "New Botley",
+      "status": "Active",
+      "iswales": false,
+      "latest_level": "2.685",
+      "threshold_value": "2.763",
+      "value_timestamp": "2024-11-26T12:30:00.000Z",
+      "ta_name": "River Thames and tributaries at New Botley, New Hinksey, North Hinksey, South Hinksey and Grandpont",
+      "severity_value": 2
+    }
+  },
+  "chartThreshold": [
+    {
+      "id": "alertThreshold",
+      "description": "Top of normal range. Low-lying land flooding possible above this level. One or more flood alerts may be issued.",
+      "shortname": "Top of normal range",
+      "value": "2.01"
+    }
+  ],
+  "infoHeight": "This station measures height from a fixed point on or close to the riverbed. This point is 54.00m above sea level.",
+  "infoState": "There are 3 states: low, normal and high. The latest level is above the normal range. We calculate the normal range using an average of past measurements and other local factors.",
+  "infoTrend": "The trend is based on the last 5 readings.",
+  "thresholds": [
+    {
+      "level": "3.14",
+      "values": [
+        {
+          "id": "highest",
+          "value": "3.14",
+          "description": "Water reaches the highest level recorded at this measuring station (25 July 2007)",
+          "shortname": "Highest level on record"
+        }
+      ],
+      "isLatest": false,
+      "type": "",
+      "isExceeded": false
+    },
+    {
+      "level": "2.76",
+      "values": [
+        {
+          "id": "warningThreshold",
+          "description": "Flood warning issued: <a href=\"/target-area/061FWF23NwBotley\">River Thames and tributaries at New Botley, New Hinksey, North Hinksey, South Hinksey and Grandpont</a>",
+          "shortname": "River Thames and tributaries at New Botley, New Hinksey, North Hinksey, South Hinksey and Grandpont",
+          "value": "2.76"
+        },
+        {
+          "id": "warningThreshold",
+          "description": "Property flooding is possible above this level",
+          "shortname": "Possible flood warnings",
+          "value": "2.76"
+        }
+      ],
+      "isLatest": false,
+      "type": "",
+      "isExceeded": false
+    },
+    {
+      "level": "2.69",
+      "values": [
+        {
+          "id": "latest",
+          "value": "2.69",
+          "description": "Latest level",
+          "shortname": ""
+        }
+      ],
+      "isLatest": true,
+      "type": "",
+      "isExceeded": false
+    },
+    {
+      "level": "2.01",
+      "values": [
+        {
+          "id": "alertThreshold",
+          "description": "Top of normal range. Low-lying land flooding possible above this level. One or more flood alerts may be issued.",
+          "shortname": "Top of normal range",
+          "value": "2.01"
+        }
+      ],
+      "isLatest": false,
+      "type": "",
+      "isExceeded": true
+    }
+  ],
+  "isUpstream": true,
+  "isDownstream": false,
+  "metaCanonical": "/station/7075",
+  "liveServiceUrl": "/station/7075",
+  "zoom": 14,
+  "telemetryRefined": {
+    "type": "river",
+    "latestDateTime": "2024-11-26T12:30Z",
+    "dataStartDateTime": "2024-11-21T12:30:00Z",
+    "dataEndDateTime": "2024-11-26T12:53:41Z",
+    "forecast": [],
+    "observed": [
+      {
+        "dateTime": "2024-11-26T12:30Z",
+        "value": 2.685
+      },
+      {
+        "dateTime": "2024-11-26T12:15Z",
+        "value": 2.681
+      },
+      {
+        "dateTime": "2024-11-21T13:00Z",
+        "value": 1.479
+      }
+    ]
+  },
+  "referer": true
+}
