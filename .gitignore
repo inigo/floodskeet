@@ -9,6 +9,7 @@ lerna-debug.log*
 
 node_modules
 dist
+build
 dist-ssr
 *.local
 
@@ -17,6 +18,13 @@ dist-ssr
 !.vscode/extensions.json
 .idea
 .DS_Store
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+local.tfvars
+terraform.tfvars
 
 # Local config
 .env

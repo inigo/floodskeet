@@ -1,4 +1,4 @@
-import { StationData, WaterLevel } from './types.ts';
+import { StationData, WaterLevel } from './types';
 
 /**
  * Converts measurements into a message.

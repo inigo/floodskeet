@@ -1,4 +1,4 @@
-import { WaterLevel, StationData } from './types.ts';
+import { WaterLevel, StationData } from './types';
 
 export class LevelDownloader {
   private readonly baseCsvUrl = "https://check-for-flooding.service.gov.uk/station-csv/";

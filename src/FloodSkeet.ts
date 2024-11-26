@@ -1,10 +1,10 @@
-import { LevelDownloader } from './LevelDownloader.ts';
-import { Formatter } from './Formatter.ts';
-import { Bluesky } from './Bluesky.ts';
+import { LevelDownloader } from './LevelDownloader';
+import { Formatter } from './Formatter';
+import { Bluesky } from './Bluesky';
 import * as dotenv from 'dotenv';
 import * as process from 'process';
 
-class FloodSkeeter {
+export class FloodSkeeter {
   private previousCount = 10
 
   constructor(private levelDownloader: LevelDownloader, private formatter: Formatter, private bluesky: Bluesky, private sendTweets: boolean = false) {}
@@ -26,6 +26,7 @@ class FloodSkeeter {
 
 }
 
+// @ts-ignore
 async function sendTestTweets() {
 // @todo This may be wrong, if launched from the root directory
   dotenv.config({ path: '../.env' });
@@ -39,6 +40,6 @@ async function sendTestTweets() {
   }
 }
 
-if (1+1==3) {
-  await sendTestTweets()
-}
+// if (1+1==3) {
+//   await sendTestTweets()
+// }

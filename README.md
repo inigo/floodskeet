@@ -1,4 +1,5 @@
 Scrape river level information from the Environment Agency website, and republish it on Bluesky.
+See https://bsky.app/profile/oxfloodtweet.bsky.social.
 
 This is an updated version of https://github.com/inigo/floodtweet.
 
@@ -14,6 +15,14 @@ The app is built with TypeScript. Use `npm run` to see build targets.
 To change the rivers that are checked, change the station IDs in `src/FloodSkeet.ts.`
 
 You can find ids via the website at http://www.environment-agency.gov.uk/homeandleisure/floods/riverlevels/.
+
+If deploying to AWS via Terraform, you will need a `terraform.tfvars` file in the `terraform` directory:
+
+    bluesky_username = "..."
+    bluesky_password = "..."
+
+And run `terraform apply` to deploy - assuming you already have appropriate AWS credentials
+and have terraform already installed.
 
 ## License
 
