@@ -1,7 +1,7 @@
 resource "aws_cloudwatch_event_rule" "every_fifteen_minutes" {
   name                = "trigger-typescript-lambda"
-  description         = "Fires every 15 minutes starting at 3 minutes past the hour"
-  schedule_expression = "cron(3/15 * * * ? *)"
+  description         = "Fires every 4 hours starting at 3 minutes past the hour (because updates are mostly on the hour)"
+  schedule_expression = "cron(3 0/4 * * ? *)"
 }
 
 # Permission to allow CloudWatch Events to invoke Lambda
