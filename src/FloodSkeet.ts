@@ -19,7 +19,7 @@ export class FloodSkeeter {
       const msg = this.formatter.formatMessage(stationData, lastLevels)
       console.log("Sending message: "+msg)
       if (this.sendTweets) {
-        this.bluesky.post(msg)
+        await this.bluesky.post(msg)
       }
     }
   }
