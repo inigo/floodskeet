@@ -37,7 +37,7 @@ export class FloodSkeeter {
       if (reading) result.push(reading);
     }
 
-    return result;
+    return result.reverse();
   }
 
 }

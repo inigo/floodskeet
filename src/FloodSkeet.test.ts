@@ -1,8 +1,9 @@
 import { FloodSkeeter } from './FloodSkeet'
-import { LevelDownloader } from './LevelDownloader'
+import { LevelDownloader, parseCsvData } from './LevelDownloader';
 import { Formatter } from './Formatter'
 import { Bluesky } from './Bluesky'
 import { StationData, WaterLevel } from './types'
+import { loadText } from './__fixtures__/loadFixture';
 
 describe('FloodSkeeter', () => {
   let levelDownloader: jest.Mocked<LevelDownloader>
@@ -44,8 +45,6 @@ describe('FloodSkeeter', () => {
 
   it('should post message when water level is above typical high', async () => {
     const waterLevels = [
-      createWaterLevel(1.0),
-      createWaterLevel(1.5),
       createWaterLevel(2.5) // Above typical high
     ]
 
@@ -63,8 +62,6 @@ describe('FloodSkeeter', () => {
 
   it('should not post message when water level is below typical high', async () => {
     const waterLevels = [
-      createWaterLevel(1.0),
-      createWaterLevel(1.5),
       createWaterLevel(1.8) // Below typical high
     ]
 
@@ -111,13 +108,13 @@ describe('FloodSkeeter', () => {
       const result = floodSkeeter.selectIntervalLevels(levels);
 
       expect(result).toEqual([
-        { timestamp: createDate(0), height: 1.7 },  // latest
-        { timestamp: createDate(6), height: 1.5 },  // 6 hours ago
-        { timestamp: createDate(12), height: 1.3 }, // 12 hours ago
-        { timestamp: createDate(19), height: 1.2 }, // 18 hours ago
-        { timestamp: createDate(25), height: 1.0 }, // 24 hours ago
-        { timestamp: createDate(37), height: 0.9 }, // 30 hours ago - duped
         { timestamp: createDate(37), height: 0.9 }, // 36 hours ago
+        { timestamp: createDate(37), height: 0.9 }, // 30 hours ago - duped
+        { timestamp: createDate(25), height: 1.0 }, // 24 hours ago
+        { timestamp: createDate(19), height: 1.2 }, // 18 hours ago
+        { timestamp: createDate(12), height: 1.3 }, // 12 hours ago
+        { timestamp: createDate(6), height: 1.5 },  // 6 hours ago
+        { timestamp: createDate(0), height: 1.7 },  // latest
       ]);
     });
 
@@ -135,9 +132,25 @@ describe('FloodSkeeter', () => {
       const result = floodSkeeter.selectIntervalLevels(levels);
 
       expect(result).toEqual([
-        { timestamp: createDate(0), height: 1.2 },
         { timestamp: createDate(6), height: 1.1 },
+        { timestamp: createDate(0), height: 1.2 },
       ]);
     });
+
+    it('copes with multi-day timespans without picking the wrong day', () => {
+      const csv = loadText('Minns-Estate-height-data.csv')
+      let levels = parseCsvData(csv);
+      const result = floodSkeeter.selectIntervalLevels(levels);
+      expect(result.map(l => l.height)).toEqual([
+        2.72,
+        2.70,
+        2.67,
+        2.64,
+        2.63,
+        2.64,
+        2.67
+      ]);
+    })
+
   });
 })

@@ -6,7 +6,7 @@ export class LevelDownloader {
 
   public async getWaterLevels(stationId: number): Promise<WaterLevel[]> {
     const csvData = await this.downloadCsvData(stationId);
-    return this.parseCsvData(csvData);
+    return parseCsvData(csvData);
   }
 
   public async getStationData(stationId: number): Promise<StationData> {
@@ -33,22 +33,6 @@ export class LevelDownloader {
     }
 
     return await response.text();
-  }
-
-  protected parseCsvData(csvText: string): WaterLevel[] {
-    const lines = csvText.trim().split('\n');
-
-    // Remove header row and filter out any empty lines
-    const dataLines = lines.slice(1).filter(line => line.length > 0);
-
-    return dataLines.map(line => {
-      const [timestamp, height] = line.split(',');
-
-      return {
-        timestamp: new Date(timestamp),
-        height: parseFloat(height)
-      };
-    });
   }
 
   protected getCsvDownloadUrl(stationId: number): string {
@@ -96,4 +80,20 @@ export class LevelDownloader {
   }
 
 
+}
+
+export function parseCsvData(csvText: string): WaterLevel[] {
+  const lines = csvText.trim().split('\n');
+
+  // Remove header row and filter out any empty lines
+  const dataLines = lines.slice(1).filter(line => line.length > 0);
+
+  return dataLines.map(line => {
+    const [timestamp, height] = line.split(',');
+
+    return {
+      timestamp: new Date(timestamp),
+      height: parseFloat(height)
+    };
+  });
 }
