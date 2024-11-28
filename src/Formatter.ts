@@ -59,13 +59,25 @@ export class Formatter {
   }
 
   private toBlock(percentage: number): string {
-    if (percentage <= (1.0/8.0)) return "▁";
+    // In some fonts, these are not regular - see https://blog.jonudell.net/2021/08/05/the-tao-of-unicode-sparklines/
+    // In particular, the default Bluesky font (although they look fine in my IDE)
+    // Full list is: ▁▂▃▄▅▆▇█
+    // Apparently good list is: ▂▃▅▆▇
+    if (percentage <= (1.0/5.0)) return "▂";
+    if (percentage <= (2.0/5.0)) return "▃";
+    if (percentage <= (3.0/5.0)) return "▅";
+    if (percentage <= (4.0/5.0)) return "▆";
+    return "▇"; // wrong on Bluesky
+
+/*
+    if (percentage <= (1.0/8.0)) return "▁"; // wrong
     if (percentage <= (2.0/8.0)) return "▂";
     if (percentage <= (3.0/8.0)) return "▃";
-    if (percentage <= (4.0/8.0)) return "▄";
+    if (percentage <= (4.0/8.0)) return "▄";// wrong
     if (percentage <= (5.0/8.0)) return "▅";
     if (percentage <= (6.0/8.0)) return "▆";
     if (percentage <= (7.0/8.0)) return "▇";
-    return "█";
+    return "█"; // wrong on Bluesky
+*/
   }
 }

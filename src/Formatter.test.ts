@@ -91,7 +91,7 @@ describe('Formatter', () => {
     });
 
     it('should contain a sparkline', () => {
-      expect(fmt([meas(1.0), meas(2.5), meas(3.0)])).toContain('▁▄█');
+      expect(fmt([meas(1.0), meas(2.5), meas(3.0)])).toContain('▂▅▇');
     });
   });
 
@@ -111,16 +111,16 @@ describe('Formatter', () => {
   });
 
   describe('creating sparklines', () => {
-    it('should return ▁ for low values', () => {
-      expect(formatter['toBlock'](-1.0)).toBe('▁');
+    it('should return ▂ for low values', () => {
+      expect(formatter['toBlock'](-1.0)).toBe('▂');
     });
 
-    it('should return █ for high values', () => {
-      expect(formatter['toBlock'](2.0)).toBe('█');
+    it('should return ▇ for high values', () => {
+      expect(formatter['toBlock'](2.0)).toBe('▇');
     });
 
-    it('should return ▄ for halfway values', () => {
-      expect(formatter['toBlock'](0.5)).toBe('▄');
+    it('should return ▅ for halfway values', () => {
+      expect(formatter['toBlock'](0.5)).toBe('▅');
     });
   });
 });
