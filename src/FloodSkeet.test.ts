@@ -84,7 +84,7 @@ describe('FloodSkeeter', () => {
 
     await floodSkeeter.postRiverDetails(123)
 
-    expect(bluesky.post).toHaveBeenCalledWith('Test message')
+    expect(bluesky.post).toHaveBeenCalledWith('Test message', 'https://check-for-flooding.service.gov.uk/station/123')
   })
 
   describe('selectIntervalLevels', () => {

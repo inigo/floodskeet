@@ -18,8 +18,9 @@ export class FloodSkeeter {
     if (lastLevel && lastLevel.height > stationData.typicalHigh) {
       const msg = this.formatter.formatMessage(stationData, lastLevels)
       console.log("Sending message: "+msg)
+      const stationUrl = "https://check-for-flooding.service.gov.uk/station/"+stationId
       if (this.sendTweets) {
-        await this.bluesky.post(msg)
+        await this.bluesky.post(msg, stationUrl)
       }
     }
   }

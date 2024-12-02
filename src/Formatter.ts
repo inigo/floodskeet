@@ -8,7 +8,7 @@ export class Formatter {
   formatMessage(station: StationData, measurements: WaterLevel[]): string {
     switch (measurements.length) {
       case 0:
-        return `No information for ${station.riverName} / ${station.stationName}`;
+        return `No information for ${this.placeName(station)}`;
       case 1:
         return this.messageText(station, measurements[measurements.length - 1]);
       case 2:
@@ -21,30 +21,34 @@ export class Formatter {
 
   messageText(s: StationData, m: WaterLevel, previous?: WaterLevel): string {
     if (previous && m.height >= (s.typicalHigh * 1.5) && m.height > previous.height) {
-      return `RIVER VERY HIGH AND RISING at ${s.riverName} / ${s.stationName} - at ${m.height.toFixed(2)} m (↑ from ${previous.height.toFixed(2)} m) compared to typical high of ${s.typicalHigh.toFixed(2)} m`;
+      return `RIVER VERY HIGH AND RISING at ${this.placeName(s)} - at ${m.height.toFixed(2)} m (↑ from ${previous.height.toFixed(2)} m) compared to typical high of ${s.typicalHigh.toFixed(2)} m`;
     }
     if (previous && m.height >= (s.typicalHigh * 1.5) && m.height === previous.height) {
-      return `RIVER VERY HIGH at ${s.riverName} / ${s.stationName} - ${m.height.toFixed(2)} m (stable) compared to typical high of ${s.typicalHigh.toFixed(2)} m`;
+      return `RIVER VERY HIGH at ${this.placeName(s)} - ${m.height.toFixed(2)} m (stable) compared to typical high of ${s.typicalHigh.toFixed(2)} m`;
     }
     if (previous && m.height >= (s.typicalHigh * 1.5) && m.height < previous.height) {
-      return `RIVER VERY HIGH at ${s.riverName} / ${s.stationName} - ${m.height.toFixed(2)} m (↓ from ${previous.height.toFixed(2)} m) compared to typical high of ${s.typicalHigh.toFixed(2)} m`;
+      return `RIVER VERY HIGH at ${this.placeName(s)} - ${m.height.toFixed(2)} m (↓ from ${previous.height.toFixed(2)} m) compared to typical high of ${s.typicalHigh.toFixed(2)} m`;
     }
     if (!previous && m.height >= (s.typicalHigh * 1.5)) {
-      return `RIVER VERY HIGH at ${s.riverName} / ${s.stationName} - ${m.height.toFixed(2)} m compared to typical high of ${s.typicalHigh.toFixed(2)} m`;
+      return `RIVER VERY HIGH at ${this.placeName(s)} - ${m.height.toFixed(2)} m compared to typical high of ${s.typicalHigh.toFixed(2)} m`;
     }
     if (previous && m.height > s.typicalHigh && m.height > previous.height) {
-      return `RIVER HIGH at ${s.riverName} / ${s.stationName} - ${m.height.toFixed(2)} m (↑ from ${previous.height.toFixed(2)} m) compared to typical high of ${s.typicalHigh.toFixed(2)} m`;
+      return `RIVER HIGH at ${this.placeName(s)} - ${m.height.toFixed(2)} m (↑ from ${previous.height.toFixed(2)} m) compared to typical high of ${s.typicalHigh.toFixed(2)} m`;
     }
     if (previous && m.height > s.typicalHigh && m.height === previous.height) {
-      return `RIVER HIGH at ${s.riverName} / ${s.stationName} - ${m.height.toFixed(2)} m (stable) compared to typical high of ${s.typicalHigh.toFixed(2)} m`;
+      return `RIVER HIGH at ${this.placeName(s)} - ${m.height.toFixed(2)} m (stable) compared to typical high of ${s.typicalHigh.toFixed(2)} m`;
     }
     if (previous && m.height > s.typicalHigh && m.height < previous.height) {
-      return `RIVER HIGH at ${s.riverName} / ${s.stationName} - ${m.height.toFixed(2)} m (↓ from ${previous.height.toFixed(2)} m) compared to typical high of ${s.typicalHigh.toFixed(2)} m`;
+      return `RIVER HIGH at ${this.placeName(s)} - ${m.height.toFixed(2)} m (↓ from ${previous.height.toFixed(2)} m) compared to typical high of ${s.typicalHigh.toFixed(2)} m`;
     }
     if (!previous && m.height > s.typicalHigh) {
-      return `RIVER HIGH at ${s.riverName} / ${s.stationName} - at ${m.height.toFixed(2)} m compared to typical high of ${s.typicalHigh.toFixed(2)} m`;
+      return `RIVER HIGH at ${this.placeName(s)} - at ${m.height.toFixed(2)} m compared to typical high of ${s.typicalHigh.toFixed(2)} m`;
     }
-    return `River level at ${s.riverName} / ${s.stationName} is at ${m.height.toFixed(2)} m`;
+    return `River level at ${this.placeName(s)} is at ${m.height.toFixed(2)} m`;
+  }
+
+  private placeName(s: StationData) {
+    return `[${s.riverName} / ${s.stationName}]`
   }
 
   formatLevelGraph(station: StationData, measurements: WaterLevel[]): string {
