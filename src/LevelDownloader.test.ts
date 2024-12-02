@@ -1,15 +1,11 @@
-import { LevelDownloader } from './LevelDownloader';
-import { StationData, WaterLevel } from './types.ts';
+import { LevelDownloader, parseCsvData } from './LevelDownloader';
+import { StationData } from './types.ts';
 import { loadText } from './__fixtures__/loadFixture.ts';
 
 // Test helper class to access protected methods
 class TestLevelDownloader extends LevelDownloader {
   public testGetDownloadUrl(stationId: number): string {
     return this.getCsvDownloadUrl(stationId);
-  }
-
-  public testParseCsvData(csv: string): WaterLevel[] {
-    return this.parseCsvData(csv);
   }
 
   public testDownloadData(stationId: number): Promise<string> {
@@ -46,7 +42,7 @@ describe('LevelDownloader', () => {
 2024-11-25T16:00:00Z,2.30
 2024-11-25T16:15:00Z,2.31`;
 
-      const result = downloader.testParseCsvData(csvData);
+      const result = parseCsvData(csvData);
 
       expect(result).toEqual([
         {
@@ -67,12 +63,12 @@ describe('LevelDownloader', () => {
 2024-11-25T16:15:00Z,2.31
 `;
 
-      const result = downloader.testParseCsvData(csvData);
+      const result = parseCsvData(csvData);
       expect(result).toHaveLength(2);
     });
 
     it('handles empty input', () => {
-      const result = downloader.testParseCsvData('');
+      const result = parseCsvData('');
       expect(result).toEqual([]);
     });
   });
