@@ -12,7 +12,7 @@ Create a .env file, with the following properties:
 
 The app is built with TypeScript. Use `npm run` to see build targets.
 
-To change the rivers that are checked, change the station IDs in `src/FloodSkeet.ts.`
+To change the rivers that are checked, change the station IDs in `src/FloodSkeet.ts`.
 
 You can find ids via the website at http://www.environment-agency.gov.uk/homeandleisure/floods/riverlevels/.
 
