@@ -26,7 +26,7 @@ export class Bluesky {
       }
     ] : [];
 
-    agent.post(
+    await agent.post(
       {
         text: messageWithoutBraces,
         facets: facets
