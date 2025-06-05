@@ -1,19 +1,15 @@
 const postMock = jest.fn();
 const loginMock = jest.fn();
 
+jest.mock('@atproto/api', () => ({
+  Agent: class { post = postMock },
+  CredentialSession: class { login = loginMock },
+}));
+
+import { Bluesky } from './Bluesky';
 
 describe('Bluesky.post', () => {
-  const createBluesky = () => {
-    let Cls!: typeof import('./Bluesky').Bluesky;
-    jest.isolateModules(() => {
-      jest.doMock('@atproto/api', () => ({
-        Agent: class { post = postMock; },
-        CredentialSession: class { login = loginMock; constructor() {} },
-      }));
-      Cls = require('./Bluesky').Bluesky;
-    });
-    return new Cls('user', 'pass');
-  };
+  const createBluesky = () => new Bluesky('user', 'pass');
 
   beforeEach(() => {
     postMock.mockReset();
