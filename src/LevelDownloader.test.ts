@@ -170,7 +170,7 @@ describe('LevelDownloader', () => {
   });
 
 
-  describe('getWaterLevels', () => {
+  describe('getStationData', () => {
     beforeEach(() => {
       global.fetch = jest.fn();
     });
